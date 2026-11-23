@@ -62,3 +62,20 @@ footer{border-top:1px solid var(--line);padding:48px 24px 96px;text-align:center
   .linhas span{margin-bottom:16px}
 }
 @media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}.reveal{opacity:1;transform:none}}
+.promo{background:var(--accent);color:#fff;display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:center;padding:16px 24px;text-align:center}
+.linhas ol{grid-template-columns:repeat(5,1fr)}
+h3 small{font:700 .7rem Manrope,sans-serif;color:var(--accent);vertical-align:middle;border:1px solid;border-radius:4px;padding:0 4px}
+.online{display:grid;grid-template-columns:1fr 1.1fr;gap:48px;align-items:center}
+.online img{border-radius:var(--r);aspect-ratio:1;object-fit:cover;width:100%;height:auto}
+.online p:not(.eyebrow){color:var(--ink2);margin-bottom:32px;max-width:48ch}
+.discreto{max-width:720px;text-align:center;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.discreto p{color:var(--ink2);margin-bottom:16px}
+.passos ol{list-style:none;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:24px;counter-reset:p}
+.passos li{counter-increment:p;background:#fff;border-radius:16px;padding:32px}
+.passos li::before{content:counter(p);display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:var(--ink);color:#fff;font-weight:700;margin-bottom:24px}
+.passos p{color:var(--ink2)}
+.faq{max-width:800px}
+details{border-bottom:1px solid var(--line);padding:16px 0}
+summary{cursor:pointer;font-weight:700;min-height:32px;display:flex;align-items:center}
+details p{color:var(--ink2);margin-top:8px}
+@media (max-width:860px){.online,.passos ol{grid-template-columns:1fr}.linhas ol{grid-template-columns:1fr 1fr}.online{gap:32px}}
